@@ -1,0 +1,387 @@
+@import "vars";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+// .hidden {
+// 	display: block;
+// }
+
+.header {
+	background-color: $backBlock;
+	padding: 20px 0 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: $gap;
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+		gap: $gap;
+		position: relative;
+	}
+	&__number {
+		background: rgb(241, 109, 127);
+		padding: 1px 5px;
+		text-align: center;
+		border-radius: 50%;
+		font-weight: 400;
+		line-height: 14px;
+		font-size: 12px;
+		color: rgb(225, 225, 225);
+		position: absolute;
+		top: -8px;
+		right: -8px;
+	}
+}
+
+.icon:hover path {
+	fill: rgb(241, 109, 127);
+	transition: all 0.3s;
+}
+
+.top-head {
+	background: #f8f3f4;
+	padding: 60px 0 60px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__heading {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: $colorSelectSite;
+	}
+}
+
+.breadcrumbs {
+	&__link {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #636363;
+	}
+
+	&__link_site {
+		font-weight: 700;
+		color: $colorSelectSite;
+	}
+}
+
+.product-box {
+	display: flex;
+	margin: 129px 0 129px 0;
+	gap: $gap;
+}
+.product {
+	width: $thirdSite;
+	display: flex;
+	flex-direction: column;
+
+	&__img {
+		width: 100%;
+	}
+
+	&__content {
+		background-color: rgb(248, 248, 248);
+		padding: 24px 16px;
+		display: flex;
+		flex-direction: column;
+		gap: $gap;
+	}
+
+	&__name {
+		color: $colorText;
+		font-size: 13px;
+		font-weight: 400;
+		text-align: left;
+		text-decoration: none;
+	}
+
+	&__text {
+		color: rgb(93, 93, 93);
+		font-size: 14px;
+		font-weight: 300;
+		text-align: left;
+	}
+
+	&__price {
+		color: $colorSelectSite;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+	}
+}
+
+
+.slider {
+	background: rgb(247, 247, 247);
+	height: 777px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: -1;
+
+
+	&__rectangle {
+		background-color: rgb(225, 225, 225);
+		width: 47px;
+		height: 47px;
+		transition: all 0.3s;
+	}
+
+	&__rectangle:hover path {
+		fill: $colorSelectSite;
+		padding: 32px;
+		transition: all 0.3s;
+	}
+}
+
+.purchase-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	border: 1px solid rgb(234, 234, 234);
+	height: 601px;
+	padding-top: 65px;
+	margin-top: -50px;
+
+	&__h3 {
+		color: rgb(241, 109, 127);
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 17px;
+	}
+
+	&__line1 {
+		border: 1.5px solid $colorSelectSite;
+		width: 63px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	&__h2 {
+		color: rgb(77, 77, 77);
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 22px;
+		margin-bottom: 49px;
+	}
+
+	&__text {
+		width: 555px;
+		color: rgb(94, 94, 94);
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 17px;
+		text-align: center;
+		margin-bottom: 32px;
+	}
+
+	&__price {
+		color: $colorSelectSite;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 29px;
+	}
+
+	&__line2 {
+		border: 0.5px solid rgb(234, 234, 234);
+		width: 642px;
+		margin: 65px 0 65px 0;
+	}
+
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		gap: $gap;
+		padding-bottom: 65px;
+	}
+
+	&__link {
+		color: rgb(111, 110, 110);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		display: flex;
+		gap: 9px;
+	}
+
+	&__link::after {
+		content: url(../img/arrow-down.svg);
+	}
+
+	&__button {
+		padding: 10px 20px;
+		font-size: 14px;
+		color: $colorSelectSite;
+		border: 1px solid $colorSelectSite;
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		cursor: pointer;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	
+	}
+
+	&__button::before {
+		content: url(../img/cart-pink.svg);
+	}
+}
+
+
+.subscribe {
+	&__main {
+		background-image: url(../img/photo_subscribe.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 95px;
+		padding-bottom: 126px;
+	}
+
+	&__item1 {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
+		color: rgb(34, 34, 36);
+		max-width: 360px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $gapGreed;
+	}
+
+	&__item1 span {
+		font-style: italic;
+	}
+
+	&__item2 h4 {
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	&__item2 {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 167.2%;
+		text-align: center;
+		color: rgb(34, 34, 36);
+	}
+	&__item2 input {
+		font-size: 14px;
+		line-height: 17px;
+		text-align: left;
+		color: rgb(34, 34, 36);
+		background: rgb(225, 225, 225);
+		padding: 15px 22px;
+		border-radius: 20px 0 0 20px;
+		width: 250px;
+		cursor: pointer;
+	}
+
+	&__item2 button {
+		font-family: Lato;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: rgb(255, 255, 255);
+		background: rgb(241, 109, 127);
+		padding: 15px 22px;
+		border-radius: 0 20px 20px 0;
+		transition: 0.3s;
+	}
+
+	&__item2 input:focus::placeholder {
+		color: transparent;
+	}
+
+	&__item2 button:hover {
+		background-color: rgb(255, 255, 255);
+		color: rgb(241, 109, 127);
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		margin-top: 32px;
+	}
+}
+
+.footer {
+	background-color: rgb(34, 34, 36);
+}
+
+.footermain {
+	padding: 30px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+
+	&__text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+		text-align: left;
+		color: rgb(251, 251, 251);
+	}
+
+	&__icon {
+		display: flex;
+		gap: 7px;
+	}
+
+	&__rectangle {
+		background-color: rgb(225, 225, 225);
+		width: 32px;
+		height: 32px;
+		transition: all 0.3s;
+	}
+
+	&__rectangle:hover {
+		background-color: rgb(241, 109, 127);
+	}
+
+	&__rectangle:hover path {
+		fill: rgb(251, 251, 251);
+		padding: 32px;
+		transition: all 0.3s;
+	}
+}
+
+.center {
+	padding-left: calc(50% - $widthSite / 2);
+	padding-right: calc(50% - $widthSite / 2);
+}
