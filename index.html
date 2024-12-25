@@ -1,315 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/reset_brand.css" />
+		<link rel="stylesheet" href="./css/style_brand.css" />
+		<title>The brand of luxurious fashion</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/reset_brand.css">
-	<link rel="stylesheet" href="./css/style_brand.css">
-	<title>The brand of luxurious fashion</title>
-</head>
-
-<body>
-	<header class="header center">
-		<div class="header_main">
-			<div class="header__logo">
-				<a href="#"><img src="img/logo.svg" alt="Logo"></a>
-				<button id="button_find">
-					<svg class="icon" width="26" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M18.059 17.625A10.395 10.395 0 1 0 10.419 21c2.253.003 4.445-.731 6.24-2.09l7.749 7.807a.926.926 0 0 0 .66.285.9.9 0 0 0 .66-.285.971.971 0 0 0 0-1.346l-7.67-7.746ZM1.886 10.5a8.535 8.535 0 1 1 8.534 8.6 8.575 8.575 0 0 1-8.534-8.6Z"
-							fill="#E8E8E8" />
-					</svg>
-				</button>
-			</div>
-			<div class="header__menu">
-				<button id="button_lines">
-					<svg class="icon" width="32.000000" height="23.000000" viewBox="0 0 32 23" fill="none"
-						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<desc>
-							Created with Pixso.
-						</desc>
-						<defs />
-						<path
-							d="M0 23L0 20.31L32 20.31L32 23L0 23ZM0 12.76L0 10.06L32 10.06L32 12.76L0 12.76ZM0 2.68L0 0L32 0L32 2.68L0 2.68Z"
-							fill="#E8E8E8" fill-opacity="1.000000" fill-rule="nonzero" />
-					</svg></button>
-				<button id="button_man" class="hidden">
-					<svg class="icon" width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M14.5 19.93c4.5 0 8.15-4.47 8.15-9.97C22.65 4.47 19 0 14.5 0a7.43 7.43 0 0 0-5.84 3 11.106 11.106 0 0 0-2.32 6.97c0 5.49 3.66 9.96 8.16 9.96Zm0-18.12c3.5 0 6.34 3.66 6.34 8.15 0 4.5-2.85 8.16-6.34 8.16-3.5 0-6.35-3.66-6.35-8.16 0-4.49 2.85-8.15 6.35-8.15Zm6.34 16.31c-.24 0-.47.1-.64.27a.91.91 0 0 0-.27.64c0 .24.1.47.27.64.17.17.4.26.64.26 1.68 0 3.29.67 4.48 1.86a6.36 6.36 0 0 1 1.86 4.49.9.9 0 0 1-.26.64.9.9 0 0 1-.64.26H2.71a.9.9 0 0 1-.64-.26.944.944 0 0 1-.26-.64c0-1.68.67-3.3 1.86-4.49a6.378 6.378 0 0 1 4.48-1.86.9.9 0 0 0 .64-.26c.17-.17.27-.4.27-.64s-.1-.47-.27-.64a.91.91 0 0 0-.64-.27c-2.16 0-4.23.86-5.76 2.39A8.15 8.15 0 0 0 0 26.28c0 .72.28 1.41.79 1.92s1.2.79 1.92.8h23.57a2.76 2.76 0 0 0 1.92-.8c.51-.51.79-1.2.8-1.92a8.202 8.202 0 0 0-2.4-5.77 8.145 8.145 0 0 0-5.76-2.39Z"
-							fill="#E8E8E8" />
-					</svg>
-				</button>
-				<button id="button_cart" class="hidden">
-					<svg class="icon" width="32.000000" height="29.000000" viewBox="0 0 32 29" fill="none"
-						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<desc>
-							Created with Pixso.
-						</desc>
-						<defs />
-						<path
-							d="M26.2 29C25.55 28.97 24.94 28.69 24.49 28.22C24.05 27.75 23.81 27.12 23.82 26.47C23.83 25.82 24.1 25.2 24.56 24.75C25.03 24.3 25.65 24.04 26.3 24.04C26.94 24.04 27.57 24.3 28.03 24.75C28.49 25.2 28.76 25.82 28.77 26.47C28.79 27.12 28.54 27.75 28.1 28.22C27.66 28.69 27.04 28.97 26.4 29L26.2 29ZM6.75 26.31C6.75 25.78 6.91 25.27 7.2 24.83C7.49 24.39 7.91 24.04 8.4 23.84C8.89 23.64 9.43 23.58 9.95 23.69C10.47 23.79 10.95 24.05 11.32 24.42C11.7 24.79 11.95 25.27 12.06 25.79C12.16 26.31 12.11 26.85 11.9 27.34C11.7 27.83 11.36 28.25 10.92 28.54C10.48 28.84 9.96 29 9.43 29C9.08 29 8.73 28.93 8.4 28.79C8.08 28.66 7.78 28.46 7.53 28.21C7.28 27.96 7.09 27.67 6.95 27.34C6.82 27.02 6.75 26.67 6.75 26.31L6.75 26.31ZM10.55 20.68C10.29 20.68 10.04 20.6 9.83 20.44C9.62 20.28 9.47 20.06 9.4 19.81L4.57 2.36L1.18 2.36C0.86 2.36 0.56 2.23 0.34 2.01C0.12 1.79 0 1.49 0 1.18C0 0.86 0.12 0.56 0.34 0.34C0.56 0.12 0.86 0 1.18 0L5.46 0C5.72 -0.01 5.97 0.08 6.18 0.24C6.38 0.39 6.53 0.61 6.6 0.86L11.43 18.32L24.61 18.32L29 8.27L14.4 8.27C14.24 8.27 14.08 8.25 13.93 8.19C13.79 8.13 13.65 8.05 13.54 7.94C13.42 7.83 13.33 7.69 13.27 7.55C13.21 7.4 13.18 7.25 13.18 7.09C13.18 6.93 13.21 6.77 13.27 6.63C13.33 6.48 13.42 6.35 13.54 6.24C13.65 6.13 13.79 6.04 13.93 5.98C14.08 5.93 14.24 5.9 14.4 5.91L30.81 5.91C31 5.9 31.2 5.95 31.37 6.05C31.54 6.14 31.69 6.27 31.79 6.44C31.9 6.6 31.97 6.79 31.99 6.99C32 7.18 31.97 7.38 31.9 7.56L26.49 19.97C26.4 20.18 26.25 20.36 26.05 20.49C25.86 20.61 25.64 20.68 25.41 20.68L10.55 20.68Z"
-							fill="#E8E8E8" fill-opacity="1.000000" fill-rule="nonzero" />
-					</svg>
-				</button>
-				<div class="number"><span>5</span></div>
-			</div>
-		</div>
-	</header>
-
-	<section>
-		<div class="thebrand center">
-			<img class="hidden" src="img/img_thebrand.svg" alt="men">
-			<div class="thebrand__title">
-				<h1>the brand</h1>
-				<h2>of luxurious <span>fashion</span></h2>
-			</div>
-			<div class="dropdown_menu hidden_menu">
-				<div class="close"><button id="close_but">
-					<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.818 8.818a.75.75 0 0 1 1.061 0L12 10.939l2.122-2.121a.75.75 0 0 1 1.06 1.06L13.061 12l2.121 2.121a.75.75 0 0 1-1.06 1.061L12 13.061 9.88 15.182a.75.75 0 1 1-1.06-1.06L10.938 12 8.82 9.879a.75.75 0 0 1 0-1.061Z" fill="#424141"/></svg></button></div>
-				<h4>MENU</h4>
-				<p>MAN</p>
-				<ul>
-					<li><a href="#">Accesories</a></li>
-					<li><a href="#">Bags</a></li>
-					<li><a href="#">Denim</a></li>
-					<li><a href="#">T-Shirts</a></li>
-				</ul>
-
-				<p>WOMAN</p>
-				<ul>
-					<li><a href="#">Accesories</a></li>
-					<li><a href="#">jackets & Coats</a></li>
-					<li><a href="#">Polos</a></li>
-					<li><a href="#">T-Shirts</a></li>
-					<li><a href="#">Shirts</a></li>
-				</ul>
-
-				<p>KIDS</p>
-				<ul>
-					<li><a href="#">Accesories</a></li>
-					<li><a href="#">jackets & Coats</a></li>
-					<li><a href="#">Polos</a></li>
-					<li><a href="#">T-Shirts</a></li>
-					<li><a href="#">Shirts</a></li>
-					<li><a href="#">Bags</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<section class="cards_menu center">
-		<div class="cards_menu_three">
-			<div class="cards_menu__women">30% OFF <br><span>FOR WOMEN</span></div>
-			<div class="cards_menu__men"> HOT DEAL <br><span>FOR MEN</span></div>
-			<div class="cards_menu__kids"> NEW ARRIVALS <br><span> FOR KIDS</span></div>
-		</div>
-		<div>
-			<div class="cards_menu__accesories">LUXIROUS & TRENDY <br><span>ACCESORIES</span>
-			</div>
-		</div>
-	</section>
-
-	<section class="fetured_items center">
-		<h2 class="fetured_items__head">Fetured Items</h2>
-		<p class="fetured_items__text">Shop for items based on what we featured in this week</p>
-
-		<div class="fetured_items__grid">
-
-			<div class="item1 items">
-				<div class="items__img">
-					<img src="img/item1.jpg" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-
-			<div class="item2 items">
-				<div class="items__img">
-					<img src="img/item2.png" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-			<div class="item3 items">
-				<div class="items__img">
-					<img src="img/item3.png" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-			<div class="item4 items">
-				<div class="items__img">
-					<img src="img/item4.png" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-			<div class="item5 items">
-				<div class="items__img">
-					<img src="img/item5.png" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-			<div class="item6 items">
-				<div class="items__img">
-					<img src="img/item6.png" alt="">
-					<button class="hiden_button"> Add to Cart</button>
-				</div>
-				<div class="card_items">
-					<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
-					<p class="card_items__text
-					">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams
-						up with Moda Operandi. </p>
-					<p class="card_items__price">$52.00 </p>
-				</div>
-			</div>
-
-		</div>
-
-		<button class="fetured_items__button">Browse All Product</button>
-
-	</section>
-
-	<section class="black">
-		<div class="black_items center">
-			<div class="black__item1 black_main">
-				<img src="img/truck.svg" alt="truck">
-				<h4>Free Delivery</h4>
-				<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-			</div>
-			<div class="black__item2 black_main">
-				<img src="img/percent.svg" alt="percent">
-				<h4>Sales & discounts</h4>
-				<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-			</div>
-			<div class="black__item3 black_main"><img src="img/crown.svg" alt="crown">
-				<h4>Quality assurance</h4>
-				<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="subscribe">
-		<div class="subscribe_main center">
-			<div class="subscribe__item1">
-				<img src="img/women_face.png" alt="">
-				<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</p>
-			</div>
-			<div class="subscribe__item2">
-				<h4>SUBSCRIBE</h4>
-				<p>FOR OUR NEWLETTER AND PROMOTION</p>
-				<form>
-					<input type="email" placeholder="Enter Your Email" required>
-					<button>
-						Subscribe
+	<body>
+		<header class="header center">
+			<div class="header_main">
+				<div class="header__logo">
+					<a href="#"><img src="img/logo.svg" alt="Logo" /></a>
+					<button id="button_find">
+						<svg
+							class="icon"
+							width="26"
+							height="27"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M18.059 17.625A10.395 10.395 0 1 0 10.419 21c2.253.003 4.445-.731 6.24-2.09l7.749 7.807a.926.926 0 0 0 .66.285.9.9 0 0 0 .66-.285.971.971 0 0 0 0-1.346l-7.67-7.746ZM1.886 10.5a8.535 8.535 0 1 1 8.534 8.6 8.575 8.575 0 0 1-8.534-8.6Z"
+								fill="#E8E8E8"
+							/>
+						</svg>
 					</button>
-				</form>
+				</div>
+				<div class="header__menu">
+					<button id="button_lines">
+						<svg
+							class="icon"
+							width="32.000000"
+							height="23.000000"
+							viewBox="0 0 32 23"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<desc>Created with Pixso.</desc>
+							<defs />
+							<path
+								d="M0 23L0 20.31L32 20.31L32 23L0 23ZM0 12.76L0 10.06L32 10.06L32 12.76L0 12.76ZM0 2.68L0 0L32 0L32 2.68L0 2.68Z"
+								fill="#E8E8E8"
+								fill-opacity="1.000000"
+								fill-rule="nonzero"
+							/>
+						</svg>
+					</button>
+					<button id="button_man" class="hidden">
+						<svg
+							class="icon"
+							width="29"
+							height="29"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M14.5 19.93c4.5 0 8.15-4.47 8.15-9.97C22.65 4.47 19 0 14.5 0a7.43 7.43 0 0 0-5.84 3 11.106 11.106 0 0 0-2.32 6.97c0 5.49 3.66 9.96 8.16 9.96Zm0-18.12c3.5 0 6.34 3.66 6.34 8.15 0 4.5-2.85 8.16-6.34 8.16-3.5 0-6.35-3.66-6.35-8.16 0-4.49 2.85-8.15 6.35-8.15Zm6.34 16.31c-.24 0-.47.1-.64.27a.91.91 0 0 0-.27.64c0 .24.1.47.27.64.17.17.4.26.64.26 1.68 0 3.29.67 4.48 1.86a6.36 6.36 0 0 1 1.86 4.49.9.9 0 0 1-.26.64.9.9 0 0 1-.64.26H2.71a.9.9 0 0 1-.64-.26.944.944 0 0 1-.26-.64c0-1.68.67-3.3 1.86-4.49a6.378 6.378 0 0 1 4.48-1.86.9.9 0 0 0 .64-.26c.17-.17.27-.4.27-.64s-.1-.47-.27-.64a.91.91 0 0 0-.64-.27c-2.16 0-4.23.86-5.76 2.39A8.15 8.15 0 0 0 0 26.28c0 .72.28 1.41.79 1.92s1.2.79 1.92.8h23.57a2.76 2.76 0 0 0 1.92-.8c.51-.51.79-1.2.8-1.92a8.202 8.202 0 0 0-2.4-5.77 8.145 8.145 0 0 0-5.76-2.39Z"
+								fill="#E8E8E8"
+							/>
+						</svg>
+					</button>
+					<button id="button_cart" class="hidden">
+						<svg
+							class="icon"
+							width="32.000000"
+							height="29.000000"
+							viewBox="0 0 32 29"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<desc>Created with Pixso.</desc>
+							<defs />
+							<path
+								d="M26.2 29C25.55 28.97 24.94 28.69 24.49 28.22C24.05 27.75 23.81 27.12 23.82 26.47C23.83 25.82 24.1 25.2 24.56 24.75C25.03 24.3 25.65 24.04 26.3 24.04C26.94 24.04 27.57 24.3 28.03 24.75C28.49 25.2 28.76 25.82 28.77 26.47C28.79 27.12 28.54 27.75 28.1 28.22C27.66 28.69 27.04 28.97 26.4 29L26.2 29ZM6.75 26.31C6.75 25.78 6.91 25.27 7.2 24.83C7.49 24.39 7.91 24.04 8.4 23.84C8.89 23.64 9.43 23.58 9.95 23.69C10.47 23.79 10.95 24.05 11.32 24.42C11.7 24.79 11.95 25.27 12.06 25.79C12.16 26.31 12.11 26.85 11.9 27.34C11.7 27.83 11.36 28.25 10.92 28.54C10.48 28.84 9.96 29 9.43 29C9.08 29 8.73 28.93 8.4 28.79C8.08 28.66 7.78 28.46 7.53 28.21C7.28 27.96 7.09 27.67 6.95 27.34C6.82 27.02 6.75 26.67 6.75 26.31L6.75 26.31ZM10.55 20.68C10.29 20.68 10.04 20.6 9.83 20.44C9.62 20.28 9.47 20.06 9.4 19.81L4.57 2.36L1.18 2.36C0.86 2.36 0.56 2.23 0.34 2.01C0.12 1.79 0 1.49 0 1.18C0 0.86 0.12 0.56 0.34 0.34C0.56 0.12 0.86 0 1.18 0L5.46 0C5.72 -0.01 5.97 0.08 6.18 0.24C6.38 0.39 6.53 0.61 6.6 0.86L11.43 18.32L24.61 18.32L29 8.27L14.4 8.27C14.24 8.27 14.08 8.25 13.93 8.19C13.79 8.13 13.65 8.05 13.54 7.94C13.42 7.83 13.33 7.69 13.27 7.55C13.21 7.4 13.18 7.25 13.18 7.09C13.18 6.93 13.21 6.77 13.27 6.63C13.33 6.48 13.42 6.35 13.54 6.24C13.65 6.13 13.79 6.04 13.93 5.98C14.08 5.93 14.24 5.9 14.4 5.91L30.81 5.91C31 5.9 31.2 5.95 31.37 6.05C31.54 6.14 31.69 6.27 31.79 6.44C31.9 6.6 31.97 6.79 31.99 6.99C32 7.18 31.97 7.38 31.9 7.56L26.49 19.97C26.4 20.18 26.25 20.36 26.05 20.49C25.86 20.61 25.64 20.68 25.41 20.68L10.55 20.68Z"
+								fill="#E8E8E8"
+								fill-opacity="1.000000"
+								fill-rule="nonzero"
+							/>
+						</svg>
+					</button>
+					<div class="number"><span>5</span></div>
+				</div>
 			</div>
-		</div>
-	</section>
+		</header>
 
-	<footer class="footer center">
-		<div class="footer_main ">
-			<p>&copy; 2022 Brand All Rights Reserved.</p>
-			<div class="footer__icon">
-				<button class="rectangle">
-					<svg class="icon_foot" width="11" height="16" viewBox="0 0 11 16" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0_190_1692)">
-							<path
-								d="M8.42177 8.28L8.84757 5.61602H6.18522V3.88729C6.18522 3.15847 6.55713 2.44806 7.74952 2.44806H8.95986V0.179975C8.95986 0.179975 7.86151 0 6.81136 0C4.61884 0 3.1857 1.27593 3.1857 3.5857V5.61602H0.748535V8.28H3.1857V14.72H6.18522V8.28H8.42177Z"
-								fill="black" />
-						</g>
-						<defs>
-							<clipPath id="clip0_190_1692">
-								<rect width="10.1063" height="16" fill="white" transform="translate(0.116943)" />
-							</clipPath>
-						</defs>
-					</svg>
-				</button>
-				<button class="rectangle">
-					<svg class="icon_foot" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#a)">
-							<path
-								d="M7.668 4.682c-2.152 0-3.888 1.703-3.888 3.815 0 2.111 1.736 3.815 3.888 3.815s3.888-1.704 3.888-3.815c0-2.112-1.736-3.815-3.888-3.815Zm0 6.295c-1.39 0-2.528-1.112-2.528-2.48 0-1.368 1.134-2.48 2.528-2.48 1.394 0 2.528 1.112 2.528 2.48 0 1.368-1.137 2.48-2.528 2.48Zm4.954-6.451c0 .494-.406.89-.907.89a.896.896 0 0 1-.907-.89c0-.492.406-.89.907-.89.5 0 .907.398.907.89Zm2.575.903c-.057-1.192-.335-2.248-1.225-3.118-.886-.87-1.963-1.142-3.177-1.202-1.252-.07-5.005-.07-6.257 0-1.211.056-2.287.329-3.177 1.199C.47 3.178.197 4.233.136 5.425c-.071 1.229-.071 4.911 0 6.14.057 1.192.335 2.248 1.225 3.117.89.87 1.962 1.143 3.177 1.202 1.252.07 5.005.07 6.257 0 1.214-.056 2.29-.328 3.177-1.202.887-.87 1.164-1.925 1.225-3.117.071-1.229.071-4.908 0-6.136Zm-1.617 7.454a2.535 2.535 0 0 1-1.442 1.414c-.998.389-3.367.3-4.47.3-1.103 0-3.475.085-4.47-.3a2.536 2.536 0 0 1-1.441-1.414c-.396-.98-.305-3.304-.305-4.386 0-1.083-.088-3.41.305-4.386a2.536 2.536 0 0 1 1.441-1.415c.998-.388 3.367-.299 4.47-.299 1.103 0 3.475-.086 4.47.3.663.258 1.174.76 1.442 1.414.396.979.304 3.303.304 4.386 0 1.082.091 3.41-.304 4.386Z"
-								fill="#000" />
-						</g>
-						<defs>
-							<clipPath id="a">
-								<path fill="#fff" transform="translate(.085)" d="M0 0h15.159v17H0z" />
-							</clipPath>
-						</defs>
-					</svg>
-				</button>
-				<button class="rectangle">
-					<svg class="icon_foot" width="13" height="16" viewBox="0 0 13 16" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#clip0_190_1704)">
-							<path
-								d="M6.54894 0.203125C3.30862 0.203125 0.106201 2.34063 0.106201 5.8C0.106201 8 1.35685 9.25 2.11482 9.25C2.42748 9.25 2.6075 8.3875 2.6075 8.14375C2.6075 7.85313 1.859 7.23438 1.859 6.025C1.859 3.5125 3.79182 1.73125 6.29312 1.73125C8.44386 1.73125 10.0356 2.94062 10.0356 5.1625C10.0356 6.82187 9.3629 9.93437 7.18373 9.93437C6.39734 9.93437 5.72464 9.37187 5.72464 8.56563C5.72464 7.38438 6.55841 6.24062 6.55841 5.02187C6.55841 2.95312 3.59286 3.32812 3.59286 5.82812C3.59286 6.35313 3.65918 6.93437 3.89604 7.4125C3.46021 9.26875 2.5696 12.0344 2.5696 13.9469C2.5696 14.5375 2.65487 15.1188 2.71172 15.7094C2.8191 15.8281 2.76541 15.8156 2.92963 15.7563C4.52137 13.6 4.46452 13.1781 5.18459 10.3562C5.57305 11.0875 6.57736 11.4812 7.37323 11.4812C10.7272 11.4812 12.2337 8.24688 12.2337 5.33125C12.2337 2.22813 9.52396 0.203125 6.54894 0.203125Z"
-								fill="black" />
-						</g>
-						<defs>
-							<clipPath id="clip0_190_1704">
-								<rect width="12.1275" height="16" fill="white" transform="translate(0.106201)" />
-							</clipPath>
-						</defs>
-					</svg>
-				</button>
-				<button class="rectangle">
-					<svg class="icon_foot" width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g clip-path="url(#a)">
-							<path
-								d="M14.593 4.741c.01.142.01.284.01.426 0 4.335-3.334 9.33-9.429 9.33a9.437 9.437 0 0 1-5.089-1.472c.267.03.523.04.8.04 1.55 0 2.976-.517 4.115-1.4A3.316 3.316 0 0 1 1.9 9.39c.205.03.41.05.626.05.298 0 .595-.04.872-.111C1.881 9.025.742 7.706.742 6.112V6.07c.44.244.954.396 1.498.416a3.268 3.268 0 0 1-1.478-2.73c0-.61.164-1.168.452-1.656a9.453 9.453 0 0 0 6.833 3.432 3.664 3.664 0 0 1-.082-.751c0-1.807 1.477-3.28 3.314-3.28.954 0 1.816.396 2.421 1.036a6.568 6.568 0 0 0 2.104-.792 3.277 3.277 0 0 1-1.457 1.807 6.699 6.699 0 0 0 1.908-.507 7.084 7.084 0 0 1-1.662 1.695Z"
-								fill="#000" />
-						</g>
-						<defs>
-							<clipPath id="a">
-								<path fill="#fff" transform="translate(.085)" d="M0 0h16.17v16H0z" />
-							</clipPath>
-						</defs>
-					</svg>
-				</button>
+		<section>
+			<div class="thebrand center">
+				<img class="hidden" src="img/img_thebrand.svg" alt="men" />
+				<div class="thebrand__title">
+					<h1>the brand</h1>
+					<h2>of luxurious <span>fashion</span></h2>
+				</div>
+				<div class="dropdown_menu hidden_menu">
+					<div class="close">
+						<button id="close_but">
+							<svg
+								width="40"
+								height="40"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.818 8.818a.75.75 0 0 1 1.061 0L12 10.939l2.122-2.121a.75.75 0 0 1 1.06 1.06L13.061 12l2.121 2.121a.75.75 0 0 1-1.06 1.061L12 13.061 9.88 15.182a.75.75 0 1 1-1.06-1.06L10.938 12 8.82 9.879a.75.75 0 0 1 0-1.061Z"
+									fill="#424141"
+								/>
+							</svg>
+						</button>
+					</div>
+					<h4>MENU</h4>
+					<p>MAN</p>
+					<ul>
+						<li><a href="catalog.html">Accesories</a></li>
+						<li><a href="#">Bags</a></li>
+						<li><a href="#">Denim</a></li>
+						<li><a href="#">T-Shirts</a></li>
+					</ul>
+
+					<p>WOMAN</p>
+					<ul>
+						<li><a href="product.html">Accesories</a></li>
+						<li><a href="#">jackets & Coats</a></li>
+						<li><a href="#">Polos</a></li>
+						<li><a href="#">T-Shirts</a></li>
+						<li><a href="#">Shirts</a></li>
+					</ul>
+
+					<p>KIDS</p>
+					<ul>
+						<li><a href="#">Accesories</a></li>
+						<li><a href="#">jackets & Coats</a></li>
+						<li><a href="#">Polos</a></li>
+						<li><a href="#">T-Shirts</a></li>
+						<li><a href="#">Shirts</a></li>
+						<li><a href="#">Bags</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</section>
 
-	</footer>
-	
-	<script src="./script/script.js"></script>
-</body>
+		<section class="cards_menu center">
+			<div class="cards_menu_three">
+				<div class="cards_menu__women">
+					30% OFF <br /><span>FOR WOMEN</span>
+				</div>
+				<div class="cards_menu__men">
+					HOT DEAL <br /><span>FOR MEN</span>
+				</div>
+				<div class="cards_menu__kids">
+					NEW ARRIVALS <br /><span> FOR KIDS</span>
+				</div>
+			</div>
+			<div>
+				<div class="cards_menu__accesories">
+					LUXIROUS & TRENDY <br /><span>ACCESORIES</span>
+				</div>
+			</div>
+		</section>
 
+		<section class="fetured_items center">
+			<h2 class="fetured_items__head">Fetured Items</h2>
+			<p class="fetured_items__text">
+				Shop for items based on what we featured in this week
+			</p>
+
+			<div class="fetured_items__grid">
+				<div class="item1 items">
+					<div class="items__img">
+						<img src="img/item1.jpg" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+
+				<div class="item2 items">
+					<div class="items__img">
+						<img src="img/item2.png" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+				<div class="item3 items">
+					<div class="items__img">
+						<img src="img/item3.png" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+				<div class="item4 items">
+					<div class="items__img">
+						<img src="img/item4.png" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+				<div class="item5 items">
+					<div class="items__img">
+						<img src="img/item5.png" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+				<div class="item6 items">
+					<div class="items__img">
+						<img src="img/item6.png" alt="" />
+						<button class="hiden_button">Add to Cart</button>
+					</div>
+					<div class="card_items">
+						<h3 class="card_items__head">ELLERY X M'O CAPSULE</h3>
+						<p class="card_items__text">
+							Known for her sculptural takes on traditional tailoring,
+							Australian arbiter of cool Kym Ellery teams up with Moda
+							Operandi.
+						</p>
+						<p class="card_items__price">$52.00</p>
+					</div>
+				</div>
+			</div>
+
+			<button class="fetured_items__button">Browse All Product</button>
+		</section>
+
+		<section class="black">
+			<div class="black_items center">
+				<div class="black__item1 black_main">
+					<img src="img/truck.svg" alt="truck" />
+					<h4>Free Delivery</h4>
+					<p>
+						Worldwide delivery on all. Authorit tively morph
+						next-generation innov tion with extensive models.
+					</p>
+				</div>
+				<div class="black__item2 black_main">
+					<img src="img/percent.svg" alt="percent" />
+					<h4>Sales & discounts</h4>
+					<p>
+						Worldwide delivery on all. Authorit tively morph
+						next-generation innov tion with extensive models.
+					</p>
+				</div>
+				<div class="black__item3 black_main">
+					<img src="img/crown.svg" alt="crown" />
+					<h4>Quality assurance</h4>
+					<p>
+						Worldwide delivery on all. Authorit tively morph
+						next-generation innov tion with extensive models.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="subscribe">
+			<div class="subscribe_main center">
+				<div class="subscribe__item1">
+					<img src="img/women_face.png" alt="" />
+					<p>
+						“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+						<span>a pulvinar purus condimentum</span>“
+					</p>
+				</div>
+				<div class="subscribe__item2">
+					<h4>SUBSCRIBE</h4>
+					<p>FOR OUR NEWLETTER AND PROMOTION</p>
+					<form>
+						<input type="email" placeholder="Enter Your Email" required />
+						<button>Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer center">
+			<div class="footer-main">
+				<p>&copy; 2022 Brand All Rights Reserved.</p>
+				<div class="footer__icon">
+					<button class="rectangle">
+						<svg
+							class="icon_foot"
+							width="11"
+							height="16"
+							viewBox="0 0 11 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0_190_1692)">
+								<path
+									d="M8.42177 8.28L8.84757 5.61602H6.18522V3.88729C6.18522 3.15847 6.55713 2.44806 7.74952 2.44806H8.95986V0.179975C8.95986 0.179975 7.86151 0 6.81136 0C4.61884 0 3.1857 1.27593 3.1857 3.5857V5.61602H0.748535V8.28H3.1857V14.72H6.18522V8.28H8.42177Z"
+									fill="black"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_190_1692">
+									<rect
+										width="10.1063"
+										height="16"
+										fill="white"
+										transform="translate(0.116943)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+					<button class="rectangle">
+						<svg
+							class="icon_foot"
+							width="16"
+							height="17"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#a)">
+								<path
+									d="M7.668 4.682c-2.152 0-3.888 1.703-3.888 3.815 0 2.111 1.736 3.815 3.888 3.815s3.888-1.704 3.888-3.815c0-2.112-1.736-3.815-3.888-3.815Zm0 6.295c-1.39 0-2.528-1.112-2.528-2.48 0-1.368 1.134-2.48 2.528-2.48 1.394 0 2.528 1.112 2.528 2.48 0 1.368-1.137 2.48-2.528 2.48Zm4.954-6.451c0 .494-.406.89-.907.89a.896.896 0 0 1-.907-.89c0-.492.406-.89.907-.89.5 0 .907.398.907.89Zm2.575.903c-.057-1.192-.335-2.248-1.225-3.118-.886-.87-1.963-1.142-3.177-1.202-1.252-.07-5.005-.07-6.257 0-1.211.056-2.287.329-3.177 1.199C.47 3.178.197 4.233.136 5.425c-.071 1.229-.071 4.911 0 6.14.057 1.192.335 2.248 1.225 3.117.89.87 1.962 1.143 3.177 1.202 1.252.07 5.005.07 6.257 0 1.214-.056 2.29-.328 3.177-1.202.887-.87 1.164-1.925 1.225-3.117.071-1.229.071-4.908 0-6.136Zm-1.617 7.454a2.535 2.535 0 0 1-1.442 1.414c-.998.389-3.367.3-4.47.3-1.103 0-3.475.085-4.47-.3a2.536 2.536 0 0 1-1.441-1.414c-.396-.98-.305-3.304-.305-4.386 0-1.083-.088-3.41.305-4.386a2.536 2.536 0 0 1 1.441-1.415c.998-.388 3.367-.299 4.47-.299 1.103 0 3.475-.086 4.47.3.663.258 1.174.76 1.442 1.414.396.979.304 3.303.304 4.386 0 1.082.091 3.41-.304 4.386Z"
+									fill="#000"
+								/>
+							</g>
+							<defs>
+								<clipPath id="a">
+									<path
+										fill="#fff"
+										transform="translate(.085)"
+										d="M0 0h15.159v17H0z"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+					<button class="rectangle">
+						<svg
+							class="icon_foot"
+							width="13"
+							height="16"
+							viewBox="0 0 13 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#clip0_190_1704)">
+								<path
+									d="M6.54894 0.203125C3.30862 0.203125 0.106201 2.34063 0.106201 5.8C0.106201 8 1.35685 9.25 2.11482 9.25C2.42748 9.25 2.6075 8.3875 2.6075 8.14375C2.6075 7.85313 1.859 7.23438 1.859 6.025C1.859 3.5125 3.79182 1.73125 6.29312 1.73125C8.44386 1.73125 10.0356 2.94062 10.0356 5.1625C10.0356 6.82187 9.3629 9.93437 7.18373 9.93437C6.39734 9.93437 5.72464 9.37187 5.72464 8.56563C5.72464 7.38438 6.55841 6.24062 6.55841 5.02187C6.55841 2.95312 3.59286 3.32812 3.59286 5.82812C3.59286 6.35313 3.65918 6.93437 3.89604 7.4125C3.46021 9.26875 2.5696 12.0344 2.5696 13.9469C2.5696 14.5375 2.65487 15.1188 2.71172 15.7094C2.8191 15.8281 2.76541 15.8156 2.92963 15.7563C4.52137 13.6 4.46452 13.1781 5.18459 10.3562C5.57305 11.0875 6.57736 11.4812 7.37323 11.4812C10.7272 11.4812 12.2337 8.24688 12.2337 5.33125C12.2337 2.22813 9.52396 0.203125 6.54894 0.203125Z"
+									fill="black"
+								/>
+							</g>
+							<defs>
+								<clipPath id="clip0_190_1704">
+									<rect
+										width="12.1275"
+										height="16"
+										fill="white"
+										transform="translate(0.106201)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+					<button class="rectangle">
+						<svg
+							class="icon_foot"
+							width="17"
+							height="16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g clip-path="url(#a)">
+								<path
+									d="M14.593 4.741c.01.142.01.284.01.426 0 4.335-3.334 9.33-9.429 9.33a9.437 9.437 0 0 1-5.089-1.472c.267.03.523.04.8.04 1.55 0 2.976-.517 4.115-1.4A3.316 3.316 0 0 1 1.9 9.39c.205.03.41.05.626.05.298 0 .595-.04.872-.111C1.881 9.025.742 7.706.742 6.112V6.07c.44.244.954.396 1.498.416a3.268 3.268 0 0 1-1.478-2.73c0-.61.164-1.168.452-1.656a9.453 9.453 0 0 0 6.833 3.432 3.664 3.664 0 0 1-.082-.751c0-1.807 1.477-3.28 3.314-3.28.954 0 1.816.396 2.421 1.036a6.568 6.568 0 0 0 2.104-.792 3.277 3.277 0 0 1-1.457 1.807 6.699 6.699 0 0 0 1.908-.507 7.084 7.084 0 0 1-1.662 1.695Z"
+									fill="#000"
+								/>
+							</g>
+							<defs>
+								<clipPath id="a">
+									<path
+										fill="#fff"
+										transform="translate(.085)"
+										d="M0 0h16.17v16H0z"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./script/script.js"></script>
+	</body>
 </html>
