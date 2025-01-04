@@ -12,6 +12,7 @@
 		<title>Тестируем SCSS</title>
 		<link rel="stylesheet" href="./css/reset_brand.css" />
 		<link rel="stylesheet" href="./css/style-katalog.css" />
+		<link rel="stylesheet" href="./css/style-cart.css" />
 	</head>
 
 	<body>
@@ -122,259 +123,119 @@
 			</header>
 
 			<div class="top-head center">
-				<h2 class="top-head__heading">NEW ARRIVALS</h2>
-	
-				<nav class="breadcrumbs">
-					<div class="breadcrumbs__box">
-						<a href="#" class="breadcrumbs__link">MEN </a>
-					</div>
-					<div class="breadcrumbs__box">
-						<a href="#" class="breadcrumbs__link">HOME </a>
-					</div>
-					<div class="breadcrumbs__box">
-						<a href="#" class="breadcrumbs__link"> NEW ARRIVALS</a>
-					</div>
-				</nav>
+				<h2 class="top-head__heading">SHOPPING CART</h2>
 			</div>
 
-			<section class="filter-sort center">
-				<details class="filter">
-					<summary class="filter__summary">
-						<span class="filter__heading">FILTER</span>
-						<svg
-							width="15.000000"
-							height="10.000000"
-							viewBox="0 0 15 10"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-						>
-							<desc>Created with Pixso.</desc>
-							<defs />
-							<path
-								id="Vector"
-								d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z"
-								fill="#000000"
-								fill-opacity="1.000000"
-								fill-rule="nonzero"
-							/>
-						</svg>
-					</summary>
-					<div class="filter__content">
-						<details open class="filter__item">
-							<summary class="filter__head">CATEGORY</summary>
-							<div class="filter__link-box">
-								<a href="#" class="filter__link">Accessories</a>
-								<a href="#" class="filter__link">Bags</a>
-								<a href="#" class="filter__link">Denim</a>
-								<a href="#" class="filter__link"
-									>Hoodies & Sweatshirts</a
+			<section class="cart center">
+				<div class="cart__cards">
+					<div class="cart__card">
+						<img
+							class="cart__img"
+							src="/img/mancatr1.png"
+							alt="man-in-cart"
+						/>
+						<div class="cart__price">
+							<a href="#" class="cart__head"> MANGO PEOPLE T-SHIRT </a>
+							<ul class="cart__ul">
+								<li>Price: <span class="cart__ul_color">$300</span></li>
+								<li>Color: Red</li>
+								<li>Size: XL</li>
+								<li>
+									Quantity:
+									<input
+										type="number"
+										value="2"
+										class="cart__ul_quantity"
+									/>
+								</li>
+							</ul>
+							<a href="#" class="cart__cross">
+								<svg
+									width="18.000000"
+									height="18.000000"
+									viewBox="0 0 18 18"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
 								>
-								<a href="#" class="filter__link">Jackets & Coats</a>
-								<a href="#" class="filter__link">Polos</a>
-								<a href="#" class="filter__link">Shirts</a>
-								<a href="#" class="filter__link">Shoes</a>
-								<a href="#" class="filter__link">Sweaters & Knits</a>
-								<a href="#" class="filter__link">T-Shirts</a>
-								<a href="#" class="filter__link">Tanks</a>
-							</div>
-						</details>
-
-						<details class="filter__item">
-							<summary class="filter__head">BRAND</summary>
-							<div class="filter__link-box">
-								<a href="#" class="filter__link">Accessories</a>
-								<a href="#" class="filter__link">Bags</a>
-								<a href="#" class="filter__link">Denim</a>
-								<a href="#" class="filter__link"
-									>Hoodies & Sweatshirts</a
-								>
-								<a href="#" class="filter__link">Jackets & Coats</a>
-								<a href="#" class="filter__link">Polos</a>
-								<a href="#" class="filter__link">Shirts</a>
-								<a href="#" class="filter__link">Shoes</a>
-								<a href="#" class="filter__link">Sweaters & Knits</a>
-								<a href="#" class="filter__link">T-Shirts</a>
-								<a href="#" class="filter__link">Tanks</a>
-							</div>
-						</details>
-
-						<details class="filter__item">
-							<summary class="filter__head">DESIGNER</summary>
-							<div class="filter__link-box">
-								<a href="#" class="filter__link">Accessories</a>
-								<a href="#" class="filter__link">Bags</a>
-								<a href="#" class="filter__link">Denim</a>
-								<a href="#" class="filter__link"
-									>Hoodies & Sweatshirts</a
-								>
-								<a href="#" class="filter__link">Jackets & Coats</a>
-								<a href="#" class="filter__link">Polos</a>
-								<a href="#" class="filter__link">Shirts</a>
-								<a href="#" class="filter__link">Shoes</a>
-								<a href="#" class="filter__link">Sweaters & Knits</a>
-								<a href="#" class="filter__link">T-Shirts</a>
-								<a href="#" class="filter__link">Tanks</a>
-							</div>
-						</details>
-					</div>
-				</details>
-
-				<div class="sort">
-					<details class="sort__details">
-						<summary class="sort__summary">
-							<span class="sort__heading">TRENDING NOW</span>
-							<svg
-								width="10.020020"
-								height="5.046143"
-								viewBox="0 0 10.02 5.04614"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<desc>Created with Pixso.</desc>
-								<defs />
-								<path
-									id="Vector"
-									d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
-									fill="#6F6E6E"
-									fill-opacity="1.000000"
-									fill-rule="nonzero"
-								/>
-							</svg>
-						</summary>
-					</details>
-
-					<details class="sort__details">
-						<summary class="sort__summary">
-							<span class="sort__heading">SIZE</span>
-							<svg
-								width="10.020020"
-								height="5.046143"
-								viewBox="0 0 10.02 5.04614"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<desc>Created with Pixso.</desc>
-								<defs />
-								<path
-									id="Vector"
-									d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
-									fill="#6F6E6E"
-									fill-opacity="1.000000"
-									fill-rule="nonzero"
-								/>
-							</svg>
-						</summary>
-						<div class="sort__box">
-							<div class="sort__check">
-								<input id="sort__check1" type="checkbox" />
-								<label for="sort__check1">XS</label>
-							</div>
-							<div class="sort__check">
-								<input id="sort__check2" type="checkbox" />
-								<label for="sort__check2">S</label>
-							</div>
-							<div class="sort__check">
-								<input id="sort__check3" type="checkbox" />
-								<label for="sort__check3">L</label>
-							</div>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
+										fill="#575757"
+										fill-opacity="1.000000"
+										fill-rule="nonzero"
+									/>
+								</svg>
+							</a>
 						</div>
-					</details>
+					</div>
 
-					<details class="sort__details">
-						<summary class="sort__summary">
-							<span class="sort__heading">PRICE</span>
-							<svg
-								width="10.020020"
-								height="5.046143"
-								viewBox="0 0 10.02 5.04614"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<desc>Created with Pixso.</desc>
-								<defs />
-								<path
-									id="Vector"
-									d="M5 5.04C4.83 5.04 4.67 4.98 4.54 4.87L0.25 1.27C0.11 1.15 0.02 0.97 0 0.78C-0.02 0.59 0.04 0.4 0.16 0.26C0.28 0.11 0.46 0.02 0.64 0C0.83 -0.02 1.02 0.04 1.17 0.16L5 3.39L8.83 0.28C8.9 0.22 8.98 0.17 9.07 0.15C9.16 0.12 9.26 0.11 9.35 0.12C9.45 0.13 9.54 0.16 9.62 0.2C9.7 0.25 9.78 0.31 9.83 0.38C9.9 0.46 9.95 0.55 9.98 0.64C10.01 0.73 10.02 0.83 10.01 0.93C10 1.03 9.97 1.13 9.93 1.21C9.88 1.3 9.81 1.38 9.73 1.44L5.45 4.92C5.31 5.01 5.16 5.05 5 5.04Z"
-									fill="#6F6E6E"
-									fill-opacity="1.000000"
-									fill-rule="nonzero"
-								/>
-							</svg>
-						</summary>
-					</details>
-				</div>
-			</section>
+					<div class="cart__card">
+						<img
+							class="cart__img"
+							src="/img/item2.png"
+							alt="man-in-cart"
+						/>
+						<div class="cart__price">
+							<a href="#" class="cart__head"> MANGO PEOPLE T-SHIRT </a>
+							<ul class="cart__ul">
+								<li>Price: <span class="cart__ul_color">$300</span></li>
+								<li>Color: Red</li>
+								<li>Size: XL</li>
+								<li>
+									Quantity:
+									<input
+										type="number"
+										value="2"
+										class="cart__ul_quantity"
+									/>
+								</li>
+							</ul>
+							<a href="#" class="cart__cross">
+								<svg
+									width="18.000000"
+									height="18.000000"
+									viewBox="0 0 18 18"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
+										fill="#575757"
+										fill-opacity="1.000000"
+										fill-rule="nonzero"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
 
-			<div class="product-box center">
-				<div class="product">
-					<img class="product__img" src="img/item1.jpg" alt="Product" />
-					<div class="product__content">
-						<a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
-						<p class="product__text">
-							Known for her sculptural takes on traditional tailoring,
-							Australian arbiter of cool Kym Ellery teams up with Moda
-							Operandi.
-						</p>
-						<p class="product__price">$52.00</p>
+					<div class="cart__buttons">
+						<button class="cart__button">CLEAR SHOPPING CART</button>
+						<button class="cart__button">CONTINUE SHOPPING</button>
 					</div>
 				</div>
 
-				<div class="product">
-					<img class="product__img" src="img/item1.jpg" alt="Product" />
-					<div class="product__content">
-						<a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
-						<p class="product__text">
-							Known for her sculptural takes on traditional tailoring,
-							Australian arbiter of cool Kym Ellery teams up with Moda
-							Operandi.
-						</p>
-						<p class="product__price">$52.00</p>
+				<div class="cart__adress">
+					<h2 class="cert__heading">SHIPPING ADRESS</h2>
+					<div class="cart__form">
+						<input type="text" class="cart__input" placeholder="Bangladesh"/>
+						<input type="text" class="cart__input" placeholder="State"/>
+						<input type="text" class="cart__input" placeholder="Postcode / Zip"/>
+						<button class="cart__button cart__button_adress">GET A QOUTE</button>
 					</div>
-				</div>
 
-				<div class="product">
-					<img class="product__img" src="img/item1.jpg" alt="Product" />
-					<div class="product__content">
-						<a href="#" class="product__name">ELLERY X M'O CAPSULE</a>
-						<p class="product__text">
-							Known for her sculptural takes on traditional tailoring,
-							Australian arbiter of cool Kym Ellery teams up with Moda
-							Operandi.
-						</p>
-						<p class="product__price">$52.00</p>
-					</div>
-				</div>
-			</div>
-
-			<section class="black">
-				<div class="black__items center">
-					<div class="black__item1 black__main">
-						<img src="img/truck.svg" alt="truck" />
-						<h4>Free Delivery</h4>
-						<p>
-							Worldwide delivery on all. Authorit tively morph
-							next-generation innov tion with extensive models.
-						</p>
-					</div>
-					<div class="black__item2 black__main">
-						<img src="img/percent.svg" alt="percent" />
-						<h4>Sales & discounts</h4>
-						<p>
-							Worldwide delivery on all. Authorit tively morph
-							next-generation innov tion with extensive models.
-						</p>
-					</div>
-					<div class="black__item3 black__main">
-						<img src="img/crown.svg" alt="crown" />
-						<h4>Quality assurance</h4>
-						<p>
-							Worldwide delivery on all. Authorit tively morph
-							next-generation innov tion with extensive models.
-						</p>
+					<div class="cart__checkout">
+						<p class="cart__sub-total">SUB TOTAL $900</p>
+						<p class="cart__grand-total">GRAND TOTAL <span class="cart__grand-total_price">$900</span></p>
+						<hr class="cart__line">
+						<button class="cart__button cart__button_checkaut">PROCEED TO CHECKOUT</button>
 					</div>
 				</div>
 			</section>
