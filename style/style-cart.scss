@@ -167,6 +167,9 @@
 		line-height: 13px;
 		text-align: left;
 		margin-right: 34px;
+		&_price{
+			margin-left: 10px;
+		}
 	}
 
 	&__grand-total {
@@ -178,6 +181,7 @@
 		margin-right: 37px;
 		&_price {
 			color: $colorSelectSite;
+			margin-left: 10px;
 		}
 	}
 

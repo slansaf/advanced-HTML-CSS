@@ -1,0 +1,126 @@
+@import "vars";
+
+.registration {
+	padding-top: 64px;
+	padding-bottom: 96px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__heading {
+		color: $colorHeading;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 19px;
+		text-align: left;
+	}
+
+	&__item {
+		border: 1px solid rgb(164, 164, 164);
+		width: 359px;
+		padding-top: 13px;
+		padding-bottom: 16px;
+		padding-left: 17px;
+		&::placeholder {
+			color: rgb(177, 177, 177);
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 16px;
+			text-align: left;
+		}
+
+		&:hover{
+			background-color: $colorSelectSite;
+			&::placeholder{
+				color: white;
+			}
+		}
+	}
+
+	&__radio-box {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__radio {
+		color: $colorHeading;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 13px;
+		text-align: left;
+	}
+
+	&__radio-text {
+		color: $colorHeading;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 13px;
+		text-align: left;
+		display: flex;
+		gap: 10px;
+	}
+
+	&__text {
+		color: rgb(177, 177, 177);
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 16px;
+		text-align: left;
+		width: 359px;
+	}
+
+	&__button {
+		margin-top: 20px;
+		background-color: $colorSelectSite;
+		color: white;
+		padding: 17px 30px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: 20px;
+		width: 185px;
+		&:hover{
+			background-color:  rgb(74, 74, 74);
+		
+		}
+	}
+}
+
+.loyalty {
+	color: $colorText;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 29px;
+	text-align: left;
+	width: 652px;
+
+	&__heading {
+	}
+
+	&__text {
+		padding: 22px 0 22px 0;
+
+	}
+
+	&__ul {
+		display: flex;
+		flex-direction: column;
+		gap: $gap;
+		margin-left: 30px;
+	
+	}
+
+	&__ul li{
+		list-style-image: url(../img/tick.svg);
+		padding-left: 23px;
+	
+	}
+
+	&__li {
+	}
+}

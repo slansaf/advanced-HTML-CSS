@@ -151,6 +151,9 @@
   text-align: left;
   margin-right: 34px;
 }
+.cart__sub-total_price {
+  margin-left: 10px;
+}
 .cart__grand-total {
   color: rgb(34, 34, 34);
   font-size: 16px;
@@ -161,6 +164,7 @@
 }
 .cart__grand-total_price {
   color: rgb(241, 109, 127);
+  margin-left: 10px;
 }
 .cart__line {
   width: 275px;

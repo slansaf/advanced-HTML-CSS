@@ -12,7 +12,7 @@
 		<title>Тестируем SCSS</title>
 		<link rel="stylesheet" href="./css/reset_brand.css" />
 		<link rel="stylesheet" href="./css/style-katalog.css" />
-		<link rel="stylesheet" href="./css/style-cart.css" />
+		<link rel="stylesheet" href="./css/style-registration.css" />
 	</head>
 
 	<body>
@@ -123,120 +123,111 @@
 			</header>
 
 			<div class="top-head center">
-				<h2 class="top-head__heading">SHOPPING CART</h2>
+				<h2 class="top-head__heading">REGISTRATION</h2>
 			</div>
 
-			<section class="cart center">
-				<div class="cart__cards">
-					<div class="cart__card">
-						<img
-							class="cart__img"
-							src="/img/mancatr1.png"
-							alt="man-in-cart"
-						/>
-						<div class="cart__price">
-							<a href="#" class="cart__head"> MANGO PEOPLE T-SHIRT </a>
-							<ul class="cart__ul">
-								<li>Price: <span class="cart__ul_color">$300</span></li>
-								<li>Color: Red</li>
-								<li>Size: XL</li>
-								<li>
-									Quantity:
-									<input
-										type="number"
-										value="2"
-										class="cart__ul_quantity"
-									/>
-								</li>
-							</ul>
-							<a href="#" class="cart__cross">
-								<svg
-									width="18.000000"
-									height="18.000000"
-									viewBox="0 0 18 18"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-								>
-									<desc>Created with Pixso.</desc>
-									<defs />
-									<path
-										id="Vector"
-										d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
-										fill="#575757"
-										fill-opacity="1.000000"
-										fill-rule="nonzero"
-									/>
-								</svg>
-							</a>
-						</div>
-					</div>
+			<section class="registration center">
+				<div class="registration__left">
+					<form class="registration__form" action="#">
+						<h2 class="registration__heading">Your Name</h2>
+						<label>
+							<input
+								class="registration__item"
+								type="text"
+								name="name"
+								placeholder="First Name"
+								required
+							/>
+						</label>
+						<label>
+							<input
+								class="registration__item"
+								type="text"
+								name="name"
+								placeholder="Last Name"
+								required
+							/>
+						</label>
 
-					<div class="cart__card">
-						<img
-							class="cart__img"
-							src="/img/item2.png"
-							alt="man-in-cart"
-						/>
-						<div class="cart__price">
-							<a href="#" class="cart__head"> MANGO PEOPLE T-SHIRT </a>
-							<ul class="cart__ul">
-								<li>Price: <span class="cart__ul_color">$300</span></li>
-								<li>Color: Red</li>
-								<li>Size: XL</li>
-								<li>
-									Quantity:
-									<input
-										type="number"
-										value="2"
-										class="cart__ul_quantity"
-									/>
-								</li>
-							</ul>
-							<a href="#" class="cart__cross">
-								<svg
-									width="18.000000"
-									height="18.000000"
-									viewBox="0 0 18 18"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink"
-								>
-									<desc>Created with Pixso.</desc>
-									<defs />
-									<path
-										id="Vector"
-										d="M11.24 9L17.53 2.71C17.82 2.41 17.99 2.01 17.99 1.59C17.99 1.17 17.82 0.76 17.53 0.46C17.23 0.16 16.83 0 16.4 0C15.98 0 15.58 0.16 15.28 0.46L9 6.75L2.71 0.46C2.41 0.16 2.01 0 1.59 0C1.16 0 0.76 0.16 0.46 0.46C0.16 0.76 0 1.16 0 1.59C0 2.01 0.16 2.41 0.46 2.71L6.75 9L0.46 15.28C0.16 15.58 0 15.98 0 16.4C0 16.83 0.16 17.23 0.46 17.53C0.76 17.83 1.16 18 1.59 18C2.01 18 2.41 17.83 2.71 17.53L9 11.24L15.28 17.53C15.58 17.83 15.98 18 16.4 18C16.83 18 17.23 17.83 17.53 17.53C17.83 17.23 18 16.83 18 16.4C18 15.98 17.83 15.58 17.53 15.28L11.24 9Z"
-										fill="#575757"
-										fill-opacity="1.000000"
-										fill-rule="nonzero"
-									/>
-								</svg>
-							</a>
-						</div>
-					</div>
+						<div class="registration__radio-box">
+							<label class="registration__radio-text">
+								<input
+									class="registration__radio"
+									type="radio"
+									name="level"
+								/>
+								Male
+							</label>
 
-					<div class="cart__buttons">
-						<button class="cart__button">CLEAR SHOPPING CART</button>
-						<button class="cart__button">CONTINUE SHOPPING</button>
-					</div>
+							<label class="registration__radio-text">
+								<input
+									class="registration__radio"
+									type="radio"
+									name="level"
+								/>
+								Female
+							</label>
+						</div>
+
+						<h2 class="registration__heading">Login details</h2>
+						<label>
+							<input
+								class="registration__item"
+								type="email"
+								name="name"
+								placeholder="Email"
+								required
+							/>
+						</label>
+						<label>
+							<input
+								class="registration__item"
+								type="password"
+								name="name"
+								placeholder="Password"
+								required
+							/>
+						</label>
+						<p class="registration__text">
+							Please use 8 or more characters, with at least 1 umber and
+							a mixture of uppercase and lowercase letters
+						</p>
+
+						<button class="registration__button" type="submit">
+							JOIN NOW
+							<svg
+								width="17.001"
+								height="9.919"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M11.54.2c.06-.06.14-.12.23-.15.08-.04.17-.05.27-.05.09 0 .18.01.27.05.08.03.16.09.23.15l4.25 4.25c.06.07.12.15.15.23a.66.66 0 0 1 0 .55c-.03.08-.09.16-.15.23l-4.25 4.25a.72.72 0 0 1-.5.2.703.703 0 0 1-.71-.71c0-.18.07-.36.21-.5l3.74-3.75-3.74-3.74a.868.868 0 0 1-.16-.23.868.868 0 0 1-.05-.28c0-.09.02-.18.05-.27.04-.08.09-.16.16-.23Z"
+									fill="#FFF"
+									fill-rule="evenodd"
+								/>
+								<path
+									d="M0 4.95c0-.18.07-.36.2-.5.14-.13.32-.2.5-.2h14.88c.19 0 .37.07.5.2.13.14.21.32.21.5 0 .19-.08.37-.21.51-.13.13-.31.2-.5.2H.7c-.18 0-.36-.07-.5-.2a.744.744 0 0 1-.2-.51Z"
+									fill="#FFF"
+									fill-rule="evenodd"
+								/>
+							</svg>
+						</button>
+					</form>
 				</div>
 
-				<div class="cart__adress">
-					<h2 class="cert__heading">SHIPPING ADRESS</h2>
-					<div class="cart__form">
-						<input type="text" class="cart__input" placeholder="Bangladesh"/>
-						<input type="text" class="cart__input" placeholder="State"/>
-						<input type="text" class="cart__input" placeholder="Postcode / Zip"/>
-						<button class="cart__button cart__button_adress">GET A QOUTE</button>
-					</div>
+				<div class="loyalty">
+					<h2 class="loyalty__heading">LOYALTY HAS ITS PERKS</h2>
+					<p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
 
-					<div class="cart__checkout">
-						<p class="cart__sub-total">SUB TOTAL <span class="cart__sub-total_price">$900</span> </p>
-						<p class="cart__grand-total">GRAND TOTAL <span class="cart__grand-total_price">$900</span></p>
-						<hr class="cart__line">
-						<button class="cart__button cart__button_checkaut">PROCEED TO CHECKOUT</button>
-					</div>
+					<ul class="loyalty__ul">
+						<li class="loyalty__li">15% off welcome offer
+						</li>
+						<li class="loyalty__li">Free shipping, returns and exchanges on all orders</li>
+						<li class="loyalty__li">$10 off a purchase on your birthday</li>
+						<li class="loyalty__li"> Early access to products</li>
+						<li class="loyalty__li">Exclusive offers & rewards</li>
+					</ul>
 				</div>
 			</section>
 
