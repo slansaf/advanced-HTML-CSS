@@ -166,6 +166,10 @@ summary::-webkit-details-marker {
 .filter__content {
   background-color: #fff;
   padding: 0 16px 16px 16px;
+  position: absolute;
+  width: 360px;
+  top: 60px;
+  left: 0;
 }
 .filter[open] {
   background: #fff;
@@ -270,12 +274,50 @@ summary::-webkit-details-marker {
   display: flex;
   margin: 0 0 129px 0;
   gap: 16px;
+  flex-wrap: wrap;
+  transition: product-box__arrow 3s;
+}
+.product-box__selection {
+  border: 1px solid rgb(235, 235, 235);
+  padding: 11px 16px;
+  margin: 48px auto 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.product-box__arrow:hover path {
+  fill: rgb(241, 109, 127);
+  transition: 0.3s;
+}
+.product-box__numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.product-box__numbers:first-of-type {
+  color: rgb(241, 109, 127);
+}
+.product-box__number {
+  color: rgb(196, 196, 196);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+}
+.product-box__number:hover {
+  color: rgb(241, 109, 127);
+  transition: 0.3s;
+}
+.product-box__number:first-of-type {
+  color: rgb(241, 109, 127);
 }
 
 .product {
   width: 370px;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 }
 .product__img {
   width: 100%;
@@ -353,7 +395,6 @@ summary::-webkit-details-marker {
   background-size: cover;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-content: center;
   justify-content: space-around;
   align-items: center;
@@ -470,4 +511,72 @@ summary::-webkit-details-marker {
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
+}
+
+@media (min-width: 736px) and (max-width: 1140px) {
+  .center {
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+  }
+  .subscribe__main {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .hidden-pick {
+    display: none;
+  }
+}
+@media (max-width: 735px) {
+  .center {
+    padding-left: calc(50% - 179px);
+    padding-right: calc(50% - 179px);
+  }
+  .hidden {
+    display: none;
+  }
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__left {
+    gap: 41px;
+  }
+  .top-head {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .filter-sort {
+    padding-top: 26px;
+    gap: 16px;
+  }
+  .filter {
+    width: 130px;
+  }
+  .filter__summary svg {
+    width: 37.5px;
+    height: 25px;
+  }
+  .sort {
+    gap: 20px;
+    width: 260px;
+  }
+  .sort__heading {
+    font-size: 11px;
+  }
+  .sort__summary {
+    gap: 5px;
+  }
+  .subscribe__main {
+    flex-direction: column;
+    gap: 59px;
+  }
+  .subscribe__item2 input {
+    width: 200px;
+  }
+  .subscribe__item2 button {
+    padding: 15px 10px;
+  }
+  .footermain {
+    justify-content: center;
+  }
 }

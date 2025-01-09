@@ -4,7 +4,18 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
+#check {
+	position: absolute;
+	left: -999999px;
+	visibility: hidden;
+}
+
+#check:checked ~ .nav {
+	right: -2235px;
+}
+
 .header {
+	position: relative;
 	background-color: $backBlock;
 	padding: 20px 0 20px 0;
 	display: flex;
@@ -22,6 +33,11 @@ body {
 		gap: $gap;
 		position: relative;
 	}
+
+	&__main-cart {
+		position: relative;
+	}
+
 	&__number {
 		background: rgb(241, 109, 127);
 		padding: 1px 5px;
@@ -34,6 +50,54 @@ body {
 		position: absolute;
 		top: -8px;
 		right: -8px;
+	}
+}
+
+.nav {
+	background: rgb(255, 255, 255);
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+	width: 232px;
+	padding: 32px;
+	position: absolute;
+	top: 55px;
+	right: 0;
+	z-index: 10;
+	transition: right 0.3s;
+	&__heading {
+		color: $colorText;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 17px;
+		text-align: left;
+		margin-bottom: 4px;
+	}
+
+	&__subheading {
+		color: $colorSelectSite;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;
+		margin-bottom: 12px;
+		margin-top: 20px;
+	}
+
+	&__ul {
+		display: flex;
+		flex-direction: column;
+		gap: 11px;
+		padding-left: 22px;
+	}
+
+	&__link {
+		color: rgb(111, 110, 110);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;
+		&:hover {
+			color: $colorSelectSite;
+		}
 	}
 }
 
@@ -67,17 +131,17 @@ body {
 		font-size: 14px;
 		line-height: 17px;
 		color: #636363;
-		&:hover{
+		&:hover {
 			color: $colorSelectSite;
 		}
 	}
 
-	&__box:last-of-type &__link{
+	&__box:last-of-type &__link {
 		font-weight: 700;
 		color: $colorSelectSite;
 	}
-	&__box:not(:last-child)::after{
-		content: '/';
+	&__box:not(:last-child)::after {
+		content: "/";
 		padding: 0 8px 0 8px;
 		color: #636363;
 	}
@@ -129,17 +193,13 @@ body {
 	}
 }
 
-
 .slider {
 	background: rgb(247, 247, 247);
-	height: 777px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	z-index: -1;
-
+	padding-bottom: 43px;
 
 	&__rectangle {
 		background-color: rgb(225, 225, 225);
@@ -155,15 +215,24 @@ body {
 	}
 }
 
+.purchase {
+	height: 600px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
 .purchase-form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: #ffffff;
 	border: 1px solid rgb(234, 234, 234);
-	height: 601px;
 	padding-top: 65px;
+	padding-bottom: 65px;
 	margin-top: -50px;
+	position: absolute;
+	z-index: 10;
 
 	&__h3 {
 		color: rgb(241, 109, 127);
@@ -242,14 +311,12 @@ body {
 		gap: 11px;
 		cursor: pointer;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-	
 	}
 
 	&__button::before {
 		content: url(../img/cart-pink.svg);
 	}
 }
-
 
 .subscribe {
 	&__main {
@@ -387,4 +454,102 @@ body {
 .center {
 	padding-left: calc(50% - $widthSite / 2);
 	padding-right: calc(50% - $widthSite / 2);
+}
+
+@media (min-width: 736px) and (max-width: 1140px) {
+	.center {
+		padding-left: calc(50% - 367px);
+		padding-right: calc(50% - 367px);
+	}
+
+	.slider {
+	}
+
+	.purchase-form {
+		margin-top: 0;
+		border: none;
+		padding-top: 65px;
+	}
+
+	.hidden-pict {
+		display: none;
+	}
+
+	.subscribe__main {
+		flex-direction: column;
+		gap: 48px;
+	}
+}
+
+@media (max-width: 735px) {
+	.center {
+		padding-left: calc(50% - 179px);
+		padding-right: calc(50% - 179px);
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.hidden-pict {
+		display: none;
+	}
+
+	.header {
+		padding-left: 16px;
+		padding-right: 16px;
+		&__left {
+			gap: 41px;
+		}
+	}
+
+	.top-head {
+		flex-direction: column;
+		gap: $gapGreed;
+	}
+
+	.slider {
+		padding-top: 85px;
+	}
+
+	.purchase-form {
+		margin-top: 0;
+		border: none;
+		padding-top: 65px;
+
+		&__text {
+			width: 326px;
+		}
+
+		&__line2 {
+			width: 164px;
+		}
+
+		&__link {
+			font-size: 10px;
+		}
+	}
+
+	.product-box {
+		flex-direction: column;
+	}
+
+	.subscribe {
+		&__main {
+			flex-direction: column;
+			gap: 59px;
+		}
+
+		&__item2 input {
+			width: 200px;
+		}
+
+		&__item2 button {
+			padding: 15px 10px;
+		}
+	}
+
+	.footermain {
+		justify-content: center;
+	}
 }

@@ -4,7 +4,7 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
-.box-content{
+.box-content {
 	overflow: hidden;
 }
 
@@ -16,13 +16,13 @@ summary::-webkit-details-marker {
 	display: none;
 }
 
-#check{
+#check {
 	position: absolute;
 	left: -999999px;
 	visibility: hidden;
 }
 
-#check:checked ~ .nav{
+#check:checked ~ .nav {
 	right: -2235px;
 }
 
@@ -46,7 +46,7 @@ summary::-webkit-details-marker {
 		position: relative;
 	}
 
-	&__main-cart{
+	&__main-cart {
 		position: relative;
 	}
 
@@ -107,7 +107,7 @@ summary::-webkit-details-marker {
 		font-weight: 400;
 		line-height: 17px;
 		text-align: left;
-		&:hover{
+		&:hover {
 			color: $colorSelectSite;
 		}
 	}
@@ -143,17 +143,17 @@ summary::-webkit-details-marker {
 		font-size: 14px;
 		line-height: 17px;
 		color: #636363;
-		&:hover{
+		&:hover {
 			color: $colorSelectSite;
 		}
 	}
 
-	&__box:last-of-type &__link{
+	&__box:last-of-type &__link {
 		font-weight: 700;
 		color: $colorSelectSite;
 	}
-	&__box:not(:last-child)::after{
-		content: '/';
+	&__box:not(:last-child)::after {
+		content: "/";
 		padding: 0 8px 0 8px;
 		color: #636363;
 	}
@@ -176,6 +176,10 @@ summary::-webkit-details-marker {
 	&__content {
 		background-color: #fff;
 		padding: 0 16px 16px 16px;
+		position: absolute;
+		width: 360px;
+		top: 60px;
+		left: 0;
 	}
 
 	&[open] {
@@ -296,12 +300,56 @@ summary::-webkit-details-marker {
 	display: flex;
 	margin: 0 0 129px 0;
 	gap: $gap;
+	flex-wrap: wrap;
+	transition: product-box__arrow 3s;
+	&__selection {
+		border: 1px solid rgb(235, 235, 235);
+		padding: 11px 16px;
+		margin: 48px auto 0;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: row;
+		gap: 18px;
+
+		}
+
+	&__arrow {
+		&:hover path {
+			fill: $colorSelectSite;
+			transition: 0.3s;
+		}
+	}
+
+	&__numbers{
+		display: flex;
+		flex-direction: row;
+		gap: $gapGreed;
+		&:first-of-type{
+			color: $colorSelectSite;
+		}
+	}
+
+	&__number {
+		color: rgb(196, 196, 196);
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 19px;
+		text-align: left;
+		&:hover{
+			color: $colorSelectSite;
+			transition: 0.3s;
+		}
+		&:first-of-type{
+			color: $colorSelectSite;
+		}
+	}
 }
 
 .product {
 	width: $thirdSite;
 	display: flex;
 	flex-direction: column;
+	max-width: 350px;
 
 	&__img {
 		width: 100%;
@@ -388,7 +436,6 @@ summary::-webkit-details-marker {
 		background-size: cover;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		align-content: center;
 		justify-content: space-around;
 		align-items: center;
@@ -516,4 +563,89 @@ summary::-webkit-details-marker {
 .center {
 	padding-left: calc(50% - $widthSite / 2);
 	padding-right: calc(50% - $widthSite / 2);
+}
+
+@media (min-width: 736px) and (max-width: 1140px) {
+	.center {
+		padding-left: calc(50% - 367px);
+		padding-right: calc(50% - 367px);
+	}
+
+	.subscribe__main {
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	.hidden-pick {
+		display: none;
+	}
+}
+
+@media (max-width: 735px) {
+	.center {
+		padding-left: calc(50% - 179px);
+		padding-right: calc(50% - 179px);
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.header {
+		padding-left: 16px;
+		padding-right: 16px;
+		&__left {
+			gap: 41px;
+		}
+	}
+
+	.top-head {
+		flex-direction: column;
+		gap: $gapGreed;
+	}
+
+	.filter-sort {
+		padding-top: 26px;
+		gap: $gap;
+	}
+
+	.filter {
+		width: 130px;
+		&__summary svg {
+			width: 37.5px;
+			height: 25px;
+		}
+	}
+
+	.sort {
+		gap: 20px;
+		width: 260px;
+
+		&__heading {
+			font-size: 11px;
+		}
+
+		&__summary {
+			gap: 5px;
+		}
+	}
+
+	.subscribe {
+		&__main {
+			flex-direction: column;
+			gap: 59px;
+		}
+
+		&__item2 input {
+			width: 200px;
+		}
+
+		&__item2 button {
+			padding: 15px 10px;
+		}
+	}
+
+	.footermain {
+		justify-content: center;
+	}
 }
