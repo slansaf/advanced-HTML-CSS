@@ -623,6 +623,11 @@ form{
 			padding-right: calc(50% - 179px);
 		}
 
+		.header_main{
+			padding: 19px 10px;
+			
+		}
+
 		.hidden{
 			display: none;
 		}
@@ -660,7 +665,8 @@ form{
 			gap: 59px;
 		}
 
-		.footer_main{
+		.footer-main{
 			flex-direction: column-reverse;
+			justify-content: center
 		}
 }
