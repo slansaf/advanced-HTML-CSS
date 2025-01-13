@@ -2,6 +2,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.box-content {
+  overflow: hidden;
+}
+
 #check {
   position: absolute;
   left: -999999px;
@@ -49,6 +53,21 @@ body {
   right: -8px;
 }
 
+.icon:hover path {
+  fill: rgb(241, 109, 127);
+  transition: all 0.3s;
+}
+
+.hidden-menu {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .nav {
   background: rgb(255, 255, 255);
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -58,7 +77,6 @@ body {
   top: 55px;
   right: 0;
   z-index: 10;
-  transition: right 0.3s;
 }
 .nav__heading {
   color: #000;
@@ -81,7 +99,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 11px;
-  padding-left: 22px;
 }
 .nav__link {
   color: rgb(111, 110, 110);
@@ -89,14 +106,10 @@ body {
   font-weight: 400;
   line-height: 17px;
   text-align: left;
+  margin-left: 22px;
 }
 .nav__link:hover {
   color: rgb(241, 109, 127);
-}
-
-.icon:hover path {
-  fill: rgb(241, 109, 127);
-  transition: all 0.3s;
 }
 
 .top-head {
@@ -153,7 +166,7 @@ body {
 }
 .product__content {
   background-color: rgb(248, 248, 248);
-  padding: 24px 16px;
+  padding: 24px 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -458,6 +471,9 @@ body {
   }
   .slider {
     padding-top: 85px;
+  }
+  .product__content {
+    padding: 24px 10px;
   }
   .purchase-form {
     margin-top: 0;

@@ -65,6 +65,12 @@ summary::-webkit-details-marker {
 	}
 }
 
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 .nav {
 	background: rgb(255, 255, 255);
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -598,6 +604,7 @@ summary::-webkit-details-marker {
 			gap: 41px;
 		}
 	}
+
 
 	.top-head {
 		flex-direction: column;

@@ -125,14 +125,17 @@
 }
 @media (max-width: 735px) {
   .registration {
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding: 40px 10px 100px 10px;
     gap: 30px;
+    justify-content: center;
   }
   .registration__button {
     font-size: 14px;
     gap: 20px;
     width: 170px;
+  }
+  .registration__item {
+    width: 355px;
   }
   .loyalty {
     font-size: 16px;

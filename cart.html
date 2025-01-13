@@ -38,30 +38,28 @@
 				<div class="header__right center">
 					<input id="check" type="checkbox" />
 
-					<button class="header__lines">
-						<label for="check">
-							<svg
-								class="icon"
-								width="32.000000"
-								height="23.000000"
-								viewBox="0 0 32 23"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<desc>Created with Pixso.</desc>
-								<defs />
-								<path
-									d="M0 23L0 20.31L32 20.31L32 23L0 23ZM0 12.76L0 10.06L32 10.06L32 12.76L0 12.76ZM0 2.68L0 0L32 0L32 2.68L0 2.68Z"
-									fill="#E8E8E8"
-									fill-opacity="1.000000"
-									fill-rule="nonzero"
-								/>
-							</svg>
-						</label>
-					</button>
+					<label class="header__lines" for="check">
+						<svg
+							class="icon"
+							width="32.000000"
+							height="23.000000"
+							viewBox="0 0 32 23"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<desc>Created with Pixso.</desc>
+							<defs />
+							<path
+								d="M0 23L0 20.31L32 20.31L32 23L0 23ZM0 12.76L0 10.06L32 10.06L32 12.76L0 12.76ZM0 2.68L0 0L32 0L32 2.68L0 2.68Z"
+								fill="#E8E8E8"
+								fill-opacity="1.000000"
+								fill-rule="nonzero"
+							/>
+						</svg>
+					</label>
 
-					<button class="header__man hidden">
+					<a class="header__man hidden" href="registration.html">
 						<svg
 							class="icon"
 							width="29"
@@ -74,10 +72,10 @@
 								fill="#E8E8E8"
 							/>
 						</svg>
-					</button>
+					</a>
 
 					<div class="header__main-cart hidden">
-						<button class="header__cart ">
+						<a class="header__cart" href="cart.html">
 							<svg
 								class="icon"
 								width="32.000000"
@@ -96,28 +94,70 @@
 									fill-rule="nonzero"
 								/>
 							</svg>
-						</button>
+						</a>
 
 						<div class="header__number"><span>5</span></div>
 					</div>
-
 					<nav class="nav">
 						<h2 class="nav__heading">MENU</h2>
-						<h3 class="nav__subheading">MEN</h3>
+						<h3 class="nav__subheading">MAN</h3>
 						<ul class="nav__ul">
-							<li><a class="nav__link" href="#">Bags</a></li>
-							<li><a class="nav__link" href="#">Denim</a></li>
-							<li><a class="nav__link" href="#">Accessories</a></li>
+							<li><a class="nav__link" href="cart.html">Cart</a></li>
+							<li>
+								<a class="nav__link" href="catalog.html">Catalog</a>
+							</li>
+							<li>
+								<a class="nav__link" href="product.html">Product</a>
+							</li>
+							<li>
+								<a class="nav__link" href="registration.html"
+									>Registration</a
+								>
+							</li>
 							<li><a class="nav__link" href="#">T-Shirts</a></li>
 						</ul>
 
-						<h3 class="nav__subheading">WOMEN</h3>
+						<h3 class="nav__subheading">WOMAN</h3>
 						<ul class="nav__ul">
-							<li><a class="nav__link" href="#">Bags</a></li>
-							<li><a class="nav__link" href="#">Denim</a></li>
-							<li><a class="nav__link" href="#">Accessories</a></li>
+							<li><a class="nav__link" href="#">Accesories</a></li>
+							<li>
+								<a class="nav__link" href="#">jackets & Coats</a>
+							</li>
+							<li><a class="nav__link" href="#">Polos</a></li>
 							<li><a class="nav__link" href="#">T-Shirts</a></li>
+							<li><a class="nav__link" href="#">Shirts</a></li>
 						</ul>
+
+						<h3 class="nav__subheading">KIDS</h3>
+						<ul class="nav__ul">
+							<li><a class="nav__link" href="#">Accesories</a></li>
+							<li>
+								<a class="nav__link" href="#">jackets & Coats</a>
+							</li>
+							<li><a class="nav__link" href="#">Polos</a></li>
+							<li><a class="nav__link" href="#">T-Shirts</a></li>
+							<li><a class="nav__link" href="#">Shirts</a></li>
+							<li><a class="nav__link" href="#">Bags</a></li>
+						</ul>
+
+						<div class="close">
+							<label id="close_but" for="check">
+								<svg
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M8.818 8.818a.75.75 0 0 1 1.061 0L12 10.939l2.122-2.121a.75.75 0 0 1 1.06 1.06L13.061 12l2.121 2.121a.75.75 0 0 1-1.06 1.061L12 13.061 9.88 15.182a.75.75 0 1 1-1.06-1.06L10.938 12 8.82 9.879a.75.75 0 0 1 0-1.061Z"
+										fill="#424141"
+									/>
+								</svg>
+							</label>
+						</div>
 					</nav>
 				</div>
 			</header>
@@ -223,20 +263,36 @@
 				</div>
 
 				<div class="cart__adress">
-					
 					<div class="cart__form">
 						<h2 class="cert__heading">SHIPPING ADRESS</h2>
-						<input type="text" class="cart__input" placeholder="Bangladesh"/>
-						<input type="text" class="cart__input" placeholder="State"/>
-						<input type="text" class="cart__input" placeholder="Postcode / Zip"/>
-						<button class="cart__button cart__button_adress">GET A QOUTE</button>
+						<input
+							type="text"
+							class="cart__input"
+							placeholder="Bangladesh"
+						/>
+						<input type="text" class="cart__input" placeholder="State" />
+						<input
+							type="text"
+							class="cart__input"
+							placeholder="Postcode / Zip"
+						/>
+						<button class="cart__button cart__button_adress">
+							GET A QOUTE
+						</button>
 					</div>
 
 					<div class="cart__checkout">
-						<p class="cart__sub-total">SUB TOTAL <span class="cart__sub-total_price">$900</span> </p>
-						<p class="cart__grand-total">GRAND TOTAL <span class="cart__grand-total_price">$900</span></p>
-						<hr class="cart__line">
-						<button class="cart__button cart__button_checkaut">PROCEED TO CHECKOUT</button>
+						<p class="cart__sub-total">
+							SUB TOTAL <span class="cart__sub-total_price">$900</span>
+						</p>
+						<p class="cart__grand-total">
+							GRAND TOTAL
+							<span class="cart__grand-total_price"> $900 </span>
+						</p>
+						<hr class="cart__line" />
+						<button class="cart__button cart__button_checkaut">
+							PROCEED TO CHECKOUT
+						</button>
 					</div>
 				</div>
 			</section>

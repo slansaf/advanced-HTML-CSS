@@ -1,4 +1,9 @@
 @import url("../fonts/stylesheet.css");
+@import "vars";
+
+body {
+	font-family: "Lato", sans-serif;
+}
 
 .center{
 	padding-left: calc(50% - 570px);
@@ -33,7 +38,7 @@
 .header__menu{
 	display: flex;
 	gap:33px;
-	position: relative;
+   position: relative;
 }
 
 .icon:hover path{
@@ -61,7 +66,6 @@
 	background: rgb(241, 228, 230);
 	display: flex;
 	align-items: center;
-   text-transform: uppercase;
    flex-direction: row;
    flex-wrap: wrap;
    align-content: center;
@@ -101,24 +105,24 @@
 	color:rgb(161 78 89);
 }
 
-.hidden_menu{
+.hidden-menu{
 	display: none;
 }
 
-.dropdown_menu{
-	position: absolute;
-	top: 0;
-	right: 0;
-	max-width: 232px;
-	background: rgb(255, 255, 255);
-	box-shadow: 0px 0px 10px 2px rgb(194, 194, 194);;
-	text-transform: none;
-	padding:33px 75px 20px 33px;
-	font-family: Lato;
-	font-size: 14px;
-	line-height: 17px;
-	text-align: left;
-}
+// .dropdown-menu{
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	max-width: 232px;
+// 	background: rgb(255, 255, 255);
+// 	box-shadow: 0px 0px 10px 2px rgb(194, 194, 194);;
+// 	text-transform: none;
+// 	padding:33px 75px 20px 33px;
+// 	font-family: Lato;
+// 	font-size: 14px;
+// 	line-height: 17px;
+// 	text-align: left;
+// }
 
 .close{
 	position: absolute;
@@ -126,37 +130,85 @@
 	right: 0;
 }
 
-.dropdown_menu h4{
-	font-weight: 700;
+.nav {
+	background: rgb(255, 255, 255);
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+	width: 232px;
+	padding: 32px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	transition: right 0.3s;
+	&__heading {
+		color: $colorText;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 17px;
+		text-align: left;
+		margin-bottom: 4px;
+	}
+
+	&__subheading {
+		color: $colorSelectSite;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;
+		margin-bottom: 12px;
+		margin-top: 20px;
+	}
+
+	&__ul {
+		display: flex;
+		flex-direction: column;
+		gap: 11px;
+		padding-left: 22px;
+	}
+
+	&__link {
+		color: rgb(111, 110, 110);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;
+		&:hover {
+			color: $colorSelectSite;
+		}
+	}
+}
+
+// .dropdown-menu h4{
+// 	font-weight: 700;
 	
-	color: rgb(0, 0, 0);
-	margin-bottom: 24px;
-}
+// 	color: rgb(0, 0, 0);
+// 	margin-bottom: 24px;
+// }
 
-.dropdown_menu p{
-	font-weight: 400;
-	color: rgb(241, 109, 127);
-	margin-top: 8px;
-	margin-bottom: 12px;
-}
+// .dropdown-menu p{
+// 	font-weight: 400;
+// 	color: rgb(241, 109, 127);
+// 	margin-top: 8px;
+// 	margin-bottom: 12px;
+// }
 
-.dropdown_menu ul{
-	padding-left: 22px;
-}
+// .dropdown-menu ul{
+// 	padding-left: 22px;
+// }
 
-.dropdown_menu ul li{
-	margin-bottom: 12px;
-}
+// .dropdown-menu ul li{
+// 	margin-bottom: 12px;
+// }
 
-.dropdown_menu ul li a{
-	font-weight: 400;
-	color: rgb(111, 110, 110);
-}
+// .dropdown-menu ul li a{
+// 	font-weight: 400;
+// 	color: rgb(111, 110, 110);
+// }
 
-.dropdown_menu ul li a:hover{
-	color: indianred;
-	text-shadow: 0 0 20px #555;;
-}
+// .dropdown-menu ul li a:hover{
+// 	color: indianred;
+// 	text-shadow: 0 0 20px #555;;
+// }
 
 
 /*---------------Cards menu--------------------*/
