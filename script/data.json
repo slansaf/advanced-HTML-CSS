@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"price": 300,
+		"count": 2, 
+		"color": "Red",
+		"size": "XL",
+		"img": "/img/mancatr1.png",
+		"title": "MANGO PEOPLE T-SHIRT"
+	},
+
+	{
+		"id": 2,
+		"price": 62,
+		"count": 1, 
+		"color": "Black",
+		"size": "L",
+		"img": "/img/item2.png",
+		"title": "ELLERY X M'O CAPSULE"
+	},
+	{
+		"id": 2,
+		"price": 62,
+		"count": 1, 
+		"color": "Black",
+		"size": "L",
+		"img": "/img/item4.png",
+		"title": "ELLERY X M'O CAPSULE"
+	}
+]
