@@ -357,6 +357,16 @@ p.card_items__price {
   content: url(../img/cart.svg);
 }
 
+.hiden_button:hover {
+  border: 1px solid rgb(241, 109, 127);
+  box-shadow: 0 0 8px #51CBEE;
+}
+
+.hiden_button:active {
+  border: 1px ridge lightblue;
+  transition: all 0.3m;
+}
+
 /* --------------- The black section --------------- */
 .black {
   background: rgb(34, 34, 36);
