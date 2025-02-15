@@ -1,6 +1,6 @@
 function displayCart() {
 	const cart = JSON.parse(localStorage.getItem('cart')) || [];
-	const cartList = document.querySelector('.cart__cards');
+	const cartList = document.querySelector('.cart__add-cards');
 	cartList.innerHTML = ''; 
 
 	if (cart.length === 0) {
@@ -8,8 +8,16 @@ function displayCart() {
 		return;
 	}
 
+	const numberOfOrders = document.querySelector('.header__number');
+
+		let item = cart.length;
+		numberOfOrders.textContent = `${item}`;
+	
+	
+	
+
 	cart.forEach(element => {
-		cartList.insertAdjacentHTML('afterbegin', `
+		cartList.insertAdjacentHTML('beforeend', `
 			<div class="cart__card" data-id="${element.id}"> <!-- Добавлен атрибут data-id -->
 					<img class="cart__img" src="${element.img}" alt="man-in-cart" />
 					<div class="cart__price">

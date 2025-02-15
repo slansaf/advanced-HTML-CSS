@@ -11,6 +11,7 @@
 		display: flex;
 		flex-direction: column;
 		padding-bottom: 64px;
+		width: 650px;
 	}
 
 	&__card {
@@ -86,6 +87,7 @@
 	&__buttons {
 		display: flex;
 		justify-content: space-between;
+
 	}
 
 	&__button {

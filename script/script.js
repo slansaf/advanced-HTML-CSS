@@ -61,12 +61,16 @@ function addToCart(productId) {
 	}
 
 
-
+const headerNumber = document.querySelector('.number');
+let item = 0;
 // Обработчик клика на кнопки "Add to Cart"
 document.addEventListener('click', (event) => {
+	
 	if (event.target && 	event.target.classList.contains('hiden_button')) {
 	const productId =	parseInt(event.target.getAttribute('data-id'), 10);
 	addToCart(productId);
+	++item;
+	headerNumber.textContent = `${item}`;
 	}
 });
 
